@@ -1,0 +1,18 @@
+<div class="container text-center padded">
+  <h1 class="padded-sm">Here is our amazing team</h1>
+  <ul class="list-inline text-center">
+    <% ["yoann", "jean-vincent"].each do |member| %>
+      <li>
+        <%= image_tag "#{member}.png", class: "avatar-large-round" %>
+        <h3><%= member.capitalize %></h3>
+      </li>
+    <% end %>
+  </ul>
+  <h3 class="padded text-center">
+    <a href="mailto:yo@yoann.co">
+      <i class="fa fa-envelope"></i>
+      yo@yoann.co
+    </a>
+  </h3>
+</div>
+
